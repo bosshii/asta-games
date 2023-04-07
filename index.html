@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <title>コンボを決めて！ ひたすら、じゃんけん。改 | 壬天堂</title>
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://unpkg.com/vuetify@3.1.12/dist/vuetify.css" rel="stylesheet">
         <meta name="viewport"
@@ -12,7 +12,7 @@
     <div id="app">
         <v-app id="inspire">
             <v-navigation-drawer v-model="drawer" app temporary>
-                <p class="text-center">Ver. 11 (2023-04-02)</p>
+                <p class="text-center mt-13">Ver. 11 (2023-04-02)</p>
                 <div class="mt-1 text-center">
                     <v-btn class="justify-center" color="blue" href="app.html"><big>プレイする</big><v-icon>mdi-open-in-new</v-icon></v-btn>
                 </div>
@@ -22,41 +22,37 @@
                 <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
                 <v-toolbar-title>壬天堂@ASTAゲームコンテスト</v-toolbar-title>
                 <div class='foo' style='margin-left: auto;'>
-
                 </div>
             </v-app-bar>
 
             <v-main><v-container>
                 <v-card elevation="4" class="py-2 mb-4" style="border-top: 5px solid red !important">
-              <v-card-title style="white-space: normal!important; word-break: keep-all;"><h2>コンボを決めて！ ひたすら、じゃんけん。改</h2></v-card-title>
-              <v-card-text>このページは現在作成中です！しばらくお待ちください！</v-card-text>
-            </v-card>
-            <div class="mb-4 text-center">
-                <v-btn block class="justify-center" color="blue" href="app.html"><big>プレイする</big><v-icon>mdi-open-in-new</v-icon></v-btn>
-            </div>
-            <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(31, 199, 255)">
-                <v-card-title>説明</v-card-title>
-                <v-card-text>ひたすらじゃんけんします。連勝すればコンボボーナスもらえます。0点下回るとバッドエンドです。
-                    確率ゲーのじゃんけんで連勝に挑む意味不明な作品ですがよかったらどうぞ。</v-card-text>
-              </v-card>
-              <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(28, 243, 67)">
-                  <v-card-title>ルール</v-card-title>
-                  <v-card-text>ゲームは【0点】からスタートします。【勝ち＋100点】【負け－100点】【あいこ＋50点】、ゲーム終了までに得点が0点以上であればクリア、0点以下だとバッドエンドです。<br>現在の得点は左上の得点メーターから確認できます。また、連勝すれば、連勝数メーターが増えていきます。連勝するほど、コンボボーナスとして追加得点をもらえます！！！！！負けると連勝数メーターは0に戻ります。なお、あいこでは変わりません。 <br>【対戦回数は自分で設定】できます（10回以上）。残り回数は右上に表示されます。マイナス点にならないように、大量コンボを決めて高得点を目指せ！！</v-card-text>
+                    <v-card-title style="white-space: normal!important; word-break: keep-all;"><h2>コンボを決めて！ ひたすら、じゃんけん。改</h2></v-card-title>
+                    <v-card-text>謎解きゲームは疲れる？それならタップするだけラクラクの頭を使わないじゃんけんゲームはいかが？</v-card-text>
+                </v-card>
+                <div class="mb-4 text-center">
+                    <v-btn block class="justify-center" color="blue" href="app.html"><big>プレイする</big><v-icon>mdi-open-in-new</v-icon></v-btn>
+                </div>
+                <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(31, 199, 255)">
+                    <v-card-title>説明</v-card-title>
+                    <v-card-text>ひたすらじゃんけんします。連勝すればコンボボーナスもらえます。0点下回るとバッドエンドです。確率ゲーのじゃんけんで連勝に挑む意味不明な作品ですがよかったらどうぞ。</v-card-text>
+                </v-card>
+                <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(28, 243, 67)">
+                    <v-card-title>ルール</v-card-title>
+                    <v-card-text>ゲームは【0点】からスタートします。【勝ち＋100点】【負け－100点】【あいこ＋50点】、ゲーム終了までに得点が0点以上であればクリア、0点以下だとバッドエンドです。<br>現在の得点は左上の得点メーターから確認できます。また、連勝すれば、連勝数メーターが増えていきます。連勝するほど、コンボボーナスとして追加得点をもらえます！！！！！負けると連勝数メーターは0に戻ります。なお、あいこでは変わりません。 <br>【対戦回数は自分で設定】できます（10回以上）。残り回数は右上に表示されます。マイナス点にならないように、大量コンボを決めて高得点を目指せ！！</v-card-text>
                 </v-card>
                 <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(171, 171, 171)">
                     <v-card-title>免責</v-card-title>
                     <v-card-text>2021年に作ったゲームをキーボード不使用のタッチ型に改良したものです。文章は中学生時代のままなので生暖かい目で見てください。</v-card-text>
-                  </v-card>
-            <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(58, 58, 58) !important">
-                <v-card-title>ゲームについて</v-card-title>
-                <v-card-text><ul class="ml-3"><li>届け出チーム名: 壬天堂（任天堂じゃないよ）</li><li>履歴<ul class="ml-2"><li>ver1         2021年2月 開発開始</li><li>（中略）</li><li>ver10         2021年6月 完成</li><li>ver11          2023年3月 2年ぶり更新 タッチに対応</li></ul></li></ul></v-card-text>
-                
-              </v-card>
-              
-            <div class="mb-4 text-center">
-                <v-btn block class="justify-center" color="blue" href="app.html"><big>プレイする</big><v-icon>mdi-open-in-new</v-icon></v-btn>
-            </div>
-              <v-img src="jintendo.svg" style="margin: 0 0 0 auto;" width="30%">
+                </v-card>
+                <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(58, 58, 58) !important">
+                    <v-card-title>ゲームについて</v-card-title>
+                    <v-card-text><ul class="ml-3"><li>届け出チーム名: 壬天堂（任天堂じゃないよ）</li><li>履歴<ul class="ml-2"><li>ver1         2021年2月 開発開始</li><li>（中略）</li><li>ver10         2021年6月 完成</li><li>ver11          2023年3月 2年ぶり更新 タッチに対応</li></ul></li></ul></v-card-text>
+                </v-card>
+                <div class="mb-4 text-center">
+                    <v-btn block class="justify-center" color="blue" href="app.html"><big>プレイする</big><v-icon>mdi-open-in-new</v-icon></v-btn>
+                </div>
+                <v-img src="jintendo.svg" style="margin: 0 0 0 auto;" width="30%">
             </v-container></v-main>
         </v-app>
     </div>
