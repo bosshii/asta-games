@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASTAゲームコンテスト</title>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/vuetify@3.1.12/dist/vuetify.css" rel="stylesheet">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+</head>
+
+<body>
+    <div id="app">
+        <v-app id="inspire">
+            <v-navigation-drawer v-model="drawer" app temporary>
+                <p class="text-center mt-13">最終更新 2023-05-12</p>
+            </v-navigation-drawer>
+
+            <v-app-bar flat app>
+                <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+                <v-toolbar-title>ASTAゲームズ</v-toolbar-title>
+                <div class='foo' style='margin-left: auto;'>
+                </div>
+            </v-app-bar>
+
+            <v-main><v-container>
+                <v-card elevation="4" class="py-2 mb-4" style="border-top: 5px solid red !important">
+                    <v-card-title style="white-space: normal!important; word-break: keep-all;"><h2>ASTA情報班が作ったゲーム</h2></v-card-title>
+                    <v-card-text>ASTA情報班が作ったゲームです。</v-card-text>
+                </v-card>
+                <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(31, 199, 255)">
+                    <v-card-title>ゲーム一覧</v-card-title>
+                    <v-card-text><ul><li><a href="./janken/">コンボを決めて！ひたすら、じゃんけん</a></li><li><a href="./asihika-returns/">ASIHIKA RETURNS 解脱</a></li></ul></v-card-text>
+                </v-card>
+            </v-container></v-main>
+        </v-app>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuetify@3.1.12/dist/vuetify.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
