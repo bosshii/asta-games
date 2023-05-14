@@ -1,117 +1,61 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
     <title>ESCAPE FROM SCHOOL</title>
-
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
-
     <link href="https://unpkg.com/vuetify@3.1.12/dist/vuetify.css" rel="stylesheet">
-
-        <meta name="viewport"
-
-        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
 </head>
-
 <body>
-
     <div id="app">
-
         <v-app id="inspire">
-
             <v-navigation-drawer v-model="drawer" app temporary>
-
                 <p class="text-center mt-13">&nbsp;</p>
-
                 <div class="mt-1 text-center">
-
-                    <v-btn class="justify-center" color="blue" href="app.html"><big>プレイする</big><v-icon>mdi-open-in-new</v-icon></v-btn>
-
+                    <v-btn class="justify-center" color="blue" href="app.html" target="_blank"><big>プレイする</big><v-icon>mdi-open-in-new</v-icon></v-btn>
                 </div>
-
+                <div class="mt-1 text-center">
+                    <v-btn class="justify-center" color="white" href="../"><big>トップ画面へ</big><v-icon>mdi-arrow-u-left-top</v-icon></v-btn>
+                </div>
             </v-navigation-drawer>
-
             <v-app-bar flat app>
-
                 <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-
                 <v-toolbar-title>ESCAPE FROM SCHOOL@ASTAゲームズ</v-toolbar-title>
-
                 <div class='foo' style='margin-left: auto;'>
-
                 </div>
-
             </v-app-bar>
-
             <v-main><v-container>
-
                 <v-card elevation="4" class="py-2 mb-4" style="border-top: 5px solid red !important">
-
                     <v-card-title style="white-space: normal!important; word-break: keep-all;"><h2>ESCAPE FROM SCHOOL</h2></v-card-title>
-
                     <v-card-text>キャッチコピー</v-card-text>
-
                 </v-card>
-
                 <div class="mb-4 text-center">
-
                     <v-btn block class="justify-center" color="blue" href="app.html"><big>プレイする</big><v-icon>mdi-open-in-new</v-icon></v-btn>
-
                 </div>
-
                 <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(31, 199, 255)">
-
                     <v-card-title>説明</v-card-title>
-
                     <v-card-text>説明</v-card-text>
-
                 </v-card>
-
                 <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(28, 243, 67)">
-
                     <v-card-title>ルール</v-card-title>
-
                     <v-card-text>ルール</v-card-text>
-
                 </v-card>
-
                 <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(171, 171, 171)">
-
                     <v-card-title>その他</v-card-title>
-
                     <v-card-text>任意</v-card-text>
-
                 </v-card>
-
                 <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(58, 58, 58) !important">
-
                     <v-card-title>ゲームについて</v-card-title>
-
                     <v-card-text><ul class="ml-3"><li>届け出チーム名: あああ</li></ul></v-card-text>
-
                 </v-card>
-
                 <div class="mb-4 text-center">
-
                     <v-btn block class="justify-center" color="blue" href="app.html"><big>プレイする</big><v-icon>mdi-open-in-new</v-icon></v-btn>
-
                 </div>
-
             </v-container></v-main>
-
         </v-app>
-
     </div>
-
     <script src="https://unpkg.com/vue"></script>
-
     <script src="https://unpkg.com/vuetify@3.1.12/dist/vuetify.js"></script>
-
     <script src="../index.js"></script>
-
 </body>
-
 </html>

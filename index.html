@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ASTAゲームコンテスト</title>
+    <title>ASTAゲームズ</title>
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://unpkg.com/vuetify@3.1.12/dist/vuetify.css" rel="stylesheet">
         <meta name="viewport"
@@ -13,6 +13,9 @@
         <v-app id="inspire">
             <v-navigation-drawer v-model="drawer" app temporary>
                 <p class="text-center mt-13">最終更新 2023-05-12</p>
+                <div class="mt-1 text-center">
+                    <v-btn class="justify-center" color="rgb(29, 243, 165)" href="https://asta.group">ASTA.groupへ戻る<v-icon>mdi-arrow-u-left-top</v-icon></v-btn>
+                </div>
             </v-navigation-drawer>
 
             <v-app-bar flat app>
@@ -23,14 +26,51 @@
             </v-app-bar>
 
             <v-main><v-container>
-                <v-card elevation="4" class="py-2 mb-4" style="border-top: 5px solid red !important">
+                <v-card elevation="4" class="py-2 mb-4" style="border-top: 5px solid rgba(0, 81, 255, 0.767) !important">
                     <v-card-title style="white-space: normal!important; word-break: keep-all;"><h2>ASTA情報班が作ったゲーム</h2></v-card-title>
-                    <v-card-text>ASTA情報班が作ったゲームです。</v-card-text>
+                    <v-row dense>
+                        <v-col cols="8">
+                            <v-card-text>ASTA情報班が作ったゲームです。<br>このサイトは当面公開予定です。QRコードでもアクセスできます。</v-card-text>
+                        </v-col>
+                        <v-col cols="4"><v-img src="qr.png" style="margin: 0 0 0 auto; position: relative; bottom: 0;" width="20%" min-width="150px"></v-img></v-col></v-row>
                 </v-card>
                 <v-card elevation="3" class="mb-4" style="border-top: 5px solid rgb(31, 199, 255)">
                     <v-card-title>ゲーム一覧</v-card-title>
-                    <v-card-text><ul class="ml-3"><li><a href="./janken/">コンボを決めて！ひたすら、じゃんけん</a></li><li><a href="./asihika-returns/">ASIHIKA RETURNS 解脱</a></li><li><a href="./escape/">ESCAPE FROM SCHOOL</a></li></ul></v-card-text>
+                    <v-card-text>
+                        <v-row dense>
+                            <v-col cols="6" xs="6" sm="4" md="3" lg="3" xl="3">
+                                <v-card class="mx-auto" max-width="344" href="./janken/" height="100%" style="position: relative; padding-bottom: 50px; border-top: 3px solid rgb(139, 144, 146)">
+                                  <v-card-item><div>
+                                    <div class="text-h6 mb-1">コンボを決めて！ひたすら、じゃんけん</div>
+                                    <div class="text-caption">簡単じゃんけんゲーム</div>
+                                  </div></v-card-item>
+                                  <v-card-actions style="position: absolute; bottom: 0;"><v-btn variant="outlined">詳細</v-btn></v-card-actions>
+                                </v-card>
+                            </v-col>
+                            <v-col cols="6" xs="6" sm="4" md="3" lg="3" xl="3">
+                                <v-card class="mx-auto" max-width="344" href="./asihika-returns/" height="100%" style="position: relative; padding-bottom: 50px; border-top: 3px solid rgb(139, 144, 146)">
+                                  <v-card-item><div>
+                                    <div class="text-h6 mb-1">ASIHIKA RETURNS 解脱</div>
+                                    <div class="text-caption">謎解きゲーム</div>
+                                  </div></v-card-item>
+                                  <v-card-actions style="position: absolute; bottom: 0;"><v-btn variant="outlined">詳細</v-btn></v-card-actions>
+                                </v-card>
+                            </v-col>
+                            <v-col cols="6" xs="6" sm="4" md="3" lg="3" xl="3">
+                                <v-card class="mx-auto" max-width="344" href="./escape/" height="100%" style="position: relative; padding-bottom: 50px; border-top: 3px solid rgb(139, 144, 146)">
+                                  <v-card-item><div>
+                                    <div class="text-h6 mb-1">ESCAPE FROM SCHOOL</div>
+                                    <div class="text-caption">脱出ゲーム</div>
+                                  </div></v-card-item>
+                                  <v-card-actions style="position: absolute; bottom: 0;"><v-btn variant="outlined">詳細</v-btn></v-card-actions>
+                                </v-card>
+                            </v-col>
+                        </v-row>
+                    </v-card>
                 </v-card>
+                <div class="mb-4 py-1 text-center">
+                    <v-btn block class="justify-center" color="rgb(29, 243, 165)" href="https://asta.group">ASTA.groupへ戻る<v-icon>mdi-arrow-u-left-top</v-icon></v-btn>
+                </div>
             </v-container></v-main>
         </v-app>
     </div>
